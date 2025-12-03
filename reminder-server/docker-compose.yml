@@ -1,0 +1,29 @@
+services:
+  nginx:
+    image: nginx:latest
+    container_name: ctf_nginx
+    ports:
+      - "7777:80"
+    volumes:
+      - ./nginx/nginx.conf:/etc/nginx/conf.d/default.conf
+    depends_on:
+      - server
+      - bot
+    networks:
+      - ctfnet
+
+  server:
+    build: ./server
+    container_name: ctf_server
+    networks:
+      - ctfnet
+
+  bot:
+    build: ./bot
+    container_name: ctf_bot
+    networks:
+      - ctfnet
+
+networks:
+  ctfnet:
+    driver: bridge
