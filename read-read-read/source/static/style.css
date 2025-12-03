@@ -1,0 +1,108 @@
+body {
+    font-family: "Poppins", sans-serif;
+    background: #f8f8f8;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 700px;
+    margin: 40px auto;
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.07);
+}
+
+h1 {
+    color: #C4141C;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+h2 {
+    color: #C4141C;
+    margin-top: 30px;
+    border-left: 5px solid #C4141C;
+    padding-left: 10px;
+}
+
+.info-box {
+    background: #fafafa;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #eee;
+}
+
+.info-row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.label {
+    color: #444;
+    font-weight: 600;
+}
+
+.value {
+    color: #000;
+    font-weight: 700;
+    font-size: 18px;
+}
+
+.button-group {
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+
+.primary-btn {
+    background: #C4141C;
+    padding: 12px 18px;
+    border: none;
+    border-radius: 8px;
+    color: white;
+    cursor: pointer;
+    font-weight: bold;
+    transition: 0.2s;
+}
+
+    .primary-btn:hover {
+        background: #a01016;
+    }
+
+.form-card {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    background: #fafafa;
+    padding: 20px;
+    border-radius: 10px;
+    border: 1px solid #eee;
+}
+
+input[type="number"] {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 14px;
+}
+
+.success-msg {
+    margin-top: 10px;
+    color: green;
+    font-weight: 600;
+}
+
+.error-msg {
+    margin-top: 10px;
+    color: red;
+    font-weight: 600;
+}
+
+.novel-list {
+    margin-top: 20px;
+}

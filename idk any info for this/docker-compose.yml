@@ -1,0 +1,14 @@
+version: '3.8'
+
+services:
+  web:
+    build: .
+    container_name: morale_ctf
+    ports:
+      - "8080:80"
+    environment:
+      SECRET_KEY: SUPERSECRETKEY1234567890
+    volumes:
+      - ./www:/var/www/html
+      - ./flag.txt:/flag.txt
+      - ./morale.txt:/home/carlos/morale.txt

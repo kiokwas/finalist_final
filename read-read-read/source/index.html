@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Read! Read! Read!</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap">
+    <link rel="stylesheet" href="static/style.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Welcome Reader!!</h1>
+
+        <div class="info-box">
+            <div class="info-row">
+                <span class="label">Balance:</span>
+                <span id="credit" class="value"></span>
+            </div>
+
+            <div class="info-row">
+                <span class="label">Words Balance:</span>
+                <span id="words_balance" class="value"></span>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>Novels</h2>
+
+            <div class="button-group">
+                <button id="list-public-novels-button" class="primary-btn">
+                    Explore Public Novels ✨
+                </button>
+                <button id="list-private-novels-button" class="primary-btn">
+                    My Private Collection
+                </button>
+            </div>
+
+            <div id="novel-list" class="novel-list"></div>
+        </div>
+
+        <div class="section">
+            <h2>Charge Account</h2>
+
+            <form id="charge-form" class="form-card">
+                <label for="nwords">Number of Words:</label>
+                <input type="number" id="nwords" name="nwords" />
+                <button type="submit" class="primary-btn">Charge Account</button>
+            </form>
+
+            <div id="charge-result-success" class="success-msg"></div>
+            <div id="charge-result-error" class="error-msg"></div>
+        </div>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="./static/script.js"></script>
+</body>
+
+</html>
